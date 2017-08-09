@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+<script src="C:\Users\suman\Desktop\JQUEARY\jquery-3.0.0.js"></script>
+<script>
+	/*$(document).ready(function(){
+		$("p").on({
+			mouseenter:function(){
+				$(this).css("background-color","blue");
+			},
+			mouseleave:function(){
+				$(this).css("background-color","red");
+			},
+			click:function(){
+				$(this).css("background-color","green")
+			}
+		});
+		});*/
+		/*$(document).ready(function(){
+			$("input").focus(function(){
+				$(this).css("background-color","grey");
+			}),
+			$("input").blur(function(){
+				$(this).css("background-color","#eafdeb");
+			});
+			
+		});*/
+		$(document).ready(function(){
+			$("button#hid").click(function(){
+				$("p").hide(500);
+			}),
+			$("button#shw").click(function(){
+				$("p").show(500);
+			}),
+			$("button#shop").click(function(){
+				$("p").toggle(500);
+			});
+		});
+</script>
+</head>
+<body>
+<!--	<h1>This Is an small example of jquery</h1>
+	<p>THis paragraph will be hide</p>
+	<p>THis paragraph2 will be hide</p>
+	<p>THis paragraph will be hide</p>
+	<p>THis paragraph will be hide</p>
+<button>Click me</button>
+<p>item1</p>
+<ul>
+	<li>coffe</li>
+	<li>milk</li>
+	<li>tea</li>
+</ul>
+<p>item2</p>
+<ul>
+	<li>coffe</li>
+	<li>milk</li>
+	<li>tea</li>
+</ul>
+<p><a href="www.google.com">Html element</a></p>
+<p><a href="www.yahoo.com">Html2 element</a></p>
+<table border=1>
+	<tr>
+		<th>Name</th>
+		<th>Ph No</th>
+		<th>Email</th>
+	</tr>
+	<tr>
+		<td>Sumanta</td>
+		<td>9434370678</td>
+		<td>sumantak14@gmail.com</td>
+	</tr>
+	<tr>
+		<td>Sumanta1</td>
+		<td>9434370678</td>
+		<td>sumantak14@gmail.com</td>
+	</tr>
+	<tr>
+		<td>Sumanta2</td>
+		<td>9434370678</td>
+		<td>sumantak14@gmail.com</td>
+	</tr>
+	<tr>
+		<td>Sumanta3</td>
+		<td>9434370678</td>
+		<td>sumantak14@gmail.com</td>
+	</tr>
+</table>
+<input type="text" name="inp"/>  
+<input type="text" name="inp1"/> -->
+<p>the text will be hided </p>
+<p>the text will be hided </p>
+<p>the text will be hided </p>
+<button id="hid">hide</button>
+<button id="shw">show</button>
+<button id="shop">hide/show</button>
+</body>
+</html>

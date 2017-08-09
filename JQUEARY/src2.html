@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+<script src="C:\Users\suman\Desktop\JQUEARY\jquery-3.0.0.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".but").click(function(){
+			$(".para").fadeToggle();
+		}),
+		$(".buttonan").click(function(){
+			$(".anm").animate({
+			//	left:'300px',
+			//	opacity:'0.5',
+				height:'toggle'
+			//height:'+=100px',
+			//	width:'+=100px'
+			}),
+		$(".queue").click(function(){
+			var asp=$(".queue1");
+			asp.animate({height:'300px',opacity:'0.4'},"slow");
+			asp.animate({width:'300px',opacity:'0.8'},"slow");
+			asp.animate({height:'100px',opacity:'0.4'},"slow");
+			asp.animate({width:'100px',opacity:'0.8'},"slow");
+		}),
+		$(".fontsize").click(function(){
+			var font=$(".fontsize1");
+			font.animate({left:'300px'},"slow");
+			font.animate({fontSize:'3em'},"slow");
+		}),
+		$(".button4").click(function(){
+			$(".button5").slideDown(5000);
+		}),
+		$("#button3").click(function(){
+			$(".button5").stop();
+		});
+	});
+});
+</script>
+</head>
+<style>
+	head{
+		margin: 0px auto;
+	}
+	.but{
+		height: 50px;
+		width: auto;
+		background-color: #718e77;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+	}
+	.para{
+	/*	border: 1px solid #817788; */
+		padding:5px;
+		height: 200px;
+		width: auto;
+		background-color: #817788;
+		color: white;
+		text-align: center;
+		display: none;
+		border-radius: 4px;
+	}
+	.buttonan{
+		height: 50px;
+		width: auto;
+		background-color: #5aa57c;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+	}
+	.anm{
+		position:relative;
+		height: 200px;
+		width: auto;
+		background-color: #738c8c;
+		display: none;
+	/*	border:1px solid #738c8c; */
+		padding: 5px;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+	}
+	.queue{
+		height: 50px;
+		width: auto;
+		background-color: #609b9f;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+	}
+	.queue1{
+		position: relative;
+		height: 100px;
+		width: 150px;
+		background-color: #f5e30a;
+		border-radius: 4px;
+	}
+	.fontsize{
+		height: 50px;
+		width: auto;
+		background-color: #6c7493;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+	}
+	.fontsize1{
+		height: 100px;
+		width: 200px;
+		background-color: #695aa5;
+		color: white;
+		border-radius: 4px;	
+	}
+	.button4{
+		height: 50px;
+		width: auto;
+		background-color: #718e77;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+	}
+	.button5{
+	/*	border: 1px solid #817788; */
+		padding:5px;
+		height: 200px;
+		width: auto;
+		background-color: #817788;
+		color: white;
+		text-align: center;
+		display: none;
+		border-radius: 4px;
+	}
+</style>
+<body>
+<div class="but">
+	<h1>click here to dropdown</h1>
+	</div><!--	
+	--><div class="para">
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	</div>
+	<div class="buttonan">
+		<h1>click for animation</h1>
+	</div>
+	<div class="anm">
+		<p>here you can see toggling</p>
+		<p>here you can see toggling</p>
+		<p>here you can see toggling</p>
+		<p>here you can see toggling</p>
+		<p>here you can see toggling</p> 
+	</div>
+	<div class="queue">
+		<h1>click for animate</h1>	
+	</div>
+	<div class="queue1">		
+	</div>
+	<div class="fontsize">
+		<h1>click here to increase the font size</h1>
+	</div>
+	<div class="fontsize1">
+		<p>Sumanta</p>
+	</div>
+	<br>
+	<button id="button3">click here for start stop animation</button>
+	<div class="button4">
+	<h1>click here to dropdown</h1>
+	</div><!--	
+	--><div class="button5">
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	<p>we use better learning method</p>
+	</div>
+</body>
+</html>
